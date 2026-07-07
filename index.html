@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Al Quran</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="logo">
+
+<div class="moon">
+<i class="fa-solid fa-moon"></i>
+</div>
+
+<div>
+
+<h2>Al Quran</h2>
+<p>Read • Listen • Reflect</p>
+
+</div>
+
+</div>
+
+<button id="themeBtn">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<h1>
+
+Explore The Holy Quran
+
+</h1>
+
+<p>
+
+Read every Surah beautifully with translations and audio.
+
+</p>
+
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search Surah..."
+>
+
+</div>
+
+</section>
+
+
+
+<!-- ================= FILTER ================= -->
+
+<section class="filters">
+
+<button class="active">
+<a href="index.html">All</a>
+</button>
+
+<button>
+<a href="Mecca.html">Meccan</a></button>
+
+<button>
+<a href="Medina.html">Medina</a>
+</button>
+
+<button id="favoritesBtn">
+
+<i class="fa-solid fa-heart"></i>
+
+Favorites
+
+</button>
+
+</section>
+
+
+
+<!-- ================= LOADING ================= -->
+
+<div id="loader">
+
+<div class="spinner"></div>
+
+</div>
+
+
+
+<!-- ================= SURAHS ================= -->
+
+<section id="surahContainer">
+
+</section>
+
+
+
+<!-- ================= MODAL ================= -->
+
+<div class="modal" id="modal">
+
+<div class="modal-content">
+
+<button id="closeModal">
+
+<i class="fa-solid fa-xmark"></i>
+
+</button>
+
+<div id="modalBody">
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- ================= TOP BUTTON ================= -->
+
+<button id="topBtn">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<div class="audio-player">
+
+    <div class="audio-info">
+
+        <h3 id="audioTitle">
+            Select Ayah
+        </h3>
+
+        <p id="audioNumber">
+            No audio playing
+        </p>
+
+    </div>
+
+
+    <audio id="audio"></audio>
+
+
+    <div class="audio-controls">
+
+        <button id="prevAyah">
+            <i class="fa-solid fa-backward"></i>
+        </button>
+
+
+        <button id="playBtn">
+            <i class="fa-solid fa-play"></i>
+        </button>
+
+
+        <button id="nextAyah">
+            <i class="fa-solid fa-forward"></i>
+        </button>
+
+
+    </div>
+
+
+    <input 
+    type="range" 
+    id="volume"
+    min="0"
+    max="1"
+    step="0.1"
+    value="1"
+    >
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
